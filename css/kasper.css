@@ -697,7 +697,7 @@ header .container nav li.toggle-menu {
 }
 .contact .container .form-content form input:focus,
 .contact .container .form-content form textarea:focus {
-  border-color: #00aaff;
+  border-color:var(--main-color);
 }
 
 .contact .container .form-content form textarea {
