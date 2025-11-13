@@ -9,9 +9,9 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -655,8 +655,8 @@ header .container nav li.toggle-menu {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.face .container > div {
-}
+/* .face .container > div {
+} */
 @media (min-width: 992px) {
   .face .container > div {
     flex-basis: 45%;
