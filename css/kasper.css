@@ -706,7 +706,7 @@ header .container nav li.toggle-menu {
 }
 
 .contact .container .form-content form input:last-of-type {
-  background-color: #00aaff;
+  background-color: var(--main-color);
   color: white;
   padding: 14px 0;
   font-size: 15px;
@@ -718,7 +718,7 @@ header .container nav li.toggle-menu {
 }
 
 .contact .container .form-content form input:last-of-type:hover {
-  background-color: #0090dd;
+  background-color: var(--transparent-color);
 }
 
 .contact .container .contact-info {
