@@ -7,11 +7,11 @@
 /*============================================================================================*/
 /*Start of global styles */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 html {
   scroll-behavior: smooth;
@@ -656,7 +656,6 @@ header .container nav li.toggle-menu {
   flex-wrap: wrap;
 }
 .face .container > div {
-
 }
 @media (min-width: 992px) {
   .face .container > div {
@@ -664,6 +663,85 @@ header .container nav li.toggle-menu {
   }
 }
 /* End Face */
+/*============================================================================================*/
+/* Start Contact */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .contact .container {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+.contact .container .form-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact .container .form-content form input,
+.contact .container .form-content form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+.contact .container .form-content form input:focus,
+.contact .container .form-content form textarea:focus {
+  border-color: #00aaff;
+}
+
+.contact .container .form-content form textarea {
+  height: 180px;
+  resize: none;
+}
+
+.contact .container .form-content form input:last-of-type {
+  background-color: #00aaff;
+  color: white;
+  padding: 14px 0;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  align-self: flex-end;
+  transition: 0.3s;
+}
+
+.contact .container .form-content form input:last-of-type:hover {
+  background-color: #0090dd;
+}
+
+.contact .container .contact-info {
+  color: #555;
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .contact .container .contact-info {
+    text-align: center;
+  }
+}
+
+.contact .container .contact-info .info-block {
+  margin-bottom: 40px;
+}
+
+.contact .container .contact-info .info-block h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  letter-spacing: 1px;
+}
+/* End Contact */
 /*============================================================================================*/
 /* Start Footer*/
 footer {
@@ -681,7 +759,7 @@ footer .container {
   justify-content: center;
   align-items: center;
 }
-footer .container .social{
+footer .container .social {
   color: white;
   text-align: center;
 }
@@ -693,12 +771,12 @@ footer .container .social h1::after {
 footer .container .social ul {
   display: flex;
   justify-content: space-between;
-  margin:0 auto 20px;
+  margin: 0 auto 20px;
 }
-footer .container .social ul li i{
+footer .container .social ul li i {
   font-size: 20px;
 }
-footer .container .social ul li i:hover{
+footer .container .social ul li i:hover {
   color: var(--main-color);
 }
 footer .container .social span {
